@@ -1,9 +1,13 @@
 name: Get seasonal animes
 
+# Donne la permission d'écriture au GITHUB_TOKEN
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: '0 0 * * *'  # Tous les jours à 00h00 UTC
-  workflow_dispatch:     # Permet de lancer l'action manuellement si nécessaire
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   fetch-anime:
@@ -11,12 +15,16 @@ jobs:
 
     steps:
       - name: Checkout du dépôt
-        uses: actions/checkout@v4  # Permet de cloner ton repo
+        uses: actions/checkout@v4
+        with:
+          # assure le token et fetch complet de l'historique (utile si besoin de push)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Installer Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'  # Utilise une version récente de Python
+          python-version: '3.12'
 
       - name: Installer les dépendances
         run: pip install requests googletrans
@@ -38,5 +46,6 @@ jobs:
       - name: Enregistrer les données dans le dépôt
         run: |
           git add seasonal_animes.json
+          # commit only if there are staged changes
           git diff --quiet && git diff --staged --quiet || git commit -m "Mise à jour des données d'anime"
           git push
