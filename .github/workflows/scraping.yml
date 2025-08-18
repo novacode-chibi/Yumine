@@ -31,8 +31,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install playwright beautifulsoup4
-          playwright install chromium
+          pip install requests
+          pip install beautifulsoup4
 
       - name: Run scraper
         # Assure-toi que le nom du script correspond (ici : scraper.py)
