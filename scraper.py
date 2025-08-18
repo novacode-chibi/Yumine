@@ -1,65 +1,126 @@
-import asyncio
 import json
-from playwright.async_api import async_playwright
+import time
+from urllib.parse import urljoin
+
+import requests
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter, Retry
 
 BASE_URL = "https://anime-sama.fr/catalogue?page="
-animes = []
+OUTPUT_FILE = "animes.json"
 
-async def fetch_html(page_number: int):
+# Configuration session avec retries
+session = requests.Session()
+retries = Retry(total=3, backoff_factor=0.5, status_forcelist=[429, 500, 502, 503, 504])
+session.mount("https://", HTTPAdapter(max_retries=retries))
+session.headers.update({
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+    "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+})
+
+
+def fetch_html(page_number: int, timeout: int = 15) -> str:
     url = f"{BASE_URL}{page_number}"
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
-        await page.goto(url)
-        await page.wait_for_load_state("networkidle")  # Attendre que tout soit chargé
-        content = await page.content()  # Récupérer le HTML complet
-        await browser.close()
-    return content
+    resp = session.get(url, timeout=timeout)
+    resp.raise_for_status()
+    return resp.text
 
-def parse_animes(content: str):
-    soup = BeautifulSoup(content, "html.parser")
-    divs = soup.select("div.shrink-0.m-3.rounded.border-2.border-gray-400.border-opacity-50.shadow-2xl.shadow-black.hover\\:shadow-zinc-900.hover\\:opacity-80.bg-black.bg-opacity-40.transition-all.duration-200.cursor-pointer")
 
-    found_anime = False
-    page_animes = []
+def parse_animes(html: str):
+    soup = BeautifulSoup(html, "html.parser")
+    found = []
 
-    for div in divs:
-        if not div.find("p", string=lambda t: t and "Anime" in t):
+    # Parcours des liens contenant un <h1> (titre) — on affine ensuite par la présence d'un marqueur "Anime"
+    for a in soup.find_all("a", href=True):
+        h1 = a.find("h1")
+        if not h1:
             continue
 
-        a_tag = div.find("a", class_="flex divide-x")
-        if a_tag:
-            lien = a_tag.get("href", "Lien non trouvé")
-            h1_tag = a_tag.find("h1", class_="text-white font-bold uppercase text-md line-clamp-2")
-            titre = h1_tag.text.strip() if h1_tag else "Titre inconnu"
-            img_tag = a_tag.find("img", class_="imageCarteHorizontale object-cover transition-all duration-200 cursor-pointer")
-            image = img_tag.get("src", "Image non trouvée")
+        titre = h1.get_text(strip=True)
+        if not titre:
+            continue
 
-            page_animes.append({"titre": titre, "lien": lien, "image": image})
-            found_anime = True
+        # remonter jusqu'à un conteneur proche pour vérifier s'il contient un paragraphe "Anime"
+        parent = a
+        is_anime_block = False
+        for _ in range(4):  # on remonte max 4 niveaux
+            if parent is None:
+                break
+            p = parent.find("p", string=lambda t: t and "Anime" in t)
+            if p:
+                is_anime_block = True
+                break
+            parent = parent.parent
 
-    return page_animes, found_anime
+        if not is_anime_block:
+            # Certains templates affichent "Anime" ailleurs — on peut aussi chercher "Anime" dans le voisinage
+            nearby_text = a.get_text(" ", strip=True)
+            if "Anime" not in nearby_text:
+                continue
 
-async def scrape():
+        # Récupération lien et image (gère lazy-loads)
+        lien = urljoin(BASE_URL, a["href"])
+        img = a.find("img")
+        image = ""
+        if img:
+            # prioriser les attributs courants pour lazy-loading
+            image = img.get("data-src") or img.get("data-original") or img.get("data-lazy") or img.get("src") or ""
+            image = image.strip()
+            if image:
+                image = urljoin(BASE_URL, image)
+
+        found.append({"titre": titre, "lien": lien, "image": image})
+
+    # Dé-duplication basique (par lien)
+    unique = []
+    seen = set()
+    for item in found:
+        if item["lien"] not in seen:
+            seen.add(item["lien"])
+            unique.append(item)
+
+    return unique
+
+
+def scrape(max_pages: int = 200, delay: float = 1.0):
     page = 1
+    all_animes = []
 
-    while True:
-        print(f"Scraping la page {page}...")
-        content = await fetch_html(page)
-        page_animes, found_anime = parse_animes(content)
-
-        if not found_anime:
-            print(f"Aucune donnée trouvée sur la page {page}. Arrêt du scraping.")
+    while page <= max_pages:
+        print(f"[+] Scraping page {page}...")
+        try:
+            html = fetch_html(page)
+        except requests.HTTPError as e:
+            print(f"[!] Erreur HTTP pour la page {page}: {e}. Arrêt.")
+            break
+        except requests.RequestException as e:
+            print(f"[!] Erreur réseau pour la page {page}: {e}. Réessaie plus tard ou arrête.")
             break
 
-        animes.extend(page_animes)
-        page += 1
+        page_animes = parse_animes(html)
+        if not page_animes:
+            print(f"[-] Aucune donnée trouvée à la page {page}. Fin du scraping.")
+            break
 
-    # Sauvegarder les résultats dans un fichier JSON
-    with open("animes.json", "w", encoding="utf-8") as f:
-        json.dump(animes, f, ensure_ascii=False, indent=4)
-    print(f"Scraping terminé. {len(animes)} animes récupérés.")
+        print(f"    -> {len(page_animes)} animes trouvés sur la page {page}.")
+        all_animes.extend(page_animes)
+
+        page += 1
+        time.sleep(delay)  # politesse : attente entre requêtes
+
+    # Sauvegarde, en supprimant doublons finaux (par lien)
+    final = []
+    seen = set()
+    for item in all_animes:
+        if item["lien"] not in seen:
+            seen.add(item["lien"])
+            final.append(item)
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(final, f, ensure_ascii=False, indent=2)
+
+    print(f"[✓] Scraping terminé. {len(final)} animes sauvegardés dans '{OUTPUT_FILE}'.")
+
 
 if __name__ == "__main__":
-    asyncio.run(scrape())
+    scrape()
