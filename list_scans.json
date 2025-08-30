@@ -1,1 +1,50 @@
 
+{
+        "mangas": [
+          {
+            "id": 1,
+            "name": "One Piece",
+            "coverUrl": "https://m.media-amazon.com/images/M/MV5BODcwNWE3OTMtMDc3MS00NDFjLWE1OTAtNDU3NjgxODMxY2UyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg",
+            "description": "L'histoire suit les aventures de Monkey D. Luffy, un jeune garçon dont le corps a acquis les propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon.",
+            "author": "Eiichiro Oda",
+            "publicationYear": 1997,
+            "rating": 9.0
+          },
+          {
+            "id": 2,
+            "name": "Naruto",
+            "coverUrl": "https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGYwYWM0YjdhYGYwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
+            "description": "Naruto Uzumaki, un jeune ninja qui cherche à être reconnu par ses pairs et qui rêve de devenir le Hokage, le chef de son village.",
+            "author": "Masashi Kishimoto",
+            "publicationYear": 1999,
+            "rating": 8.5
+          },
+          {
+            "id": 3,
+            "name": "Attack on Titan",
+            "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_FMjpg_UX1000_.jpg",
+            "description": "Dans un monde où l'humanité vit entourée d'énormes murs pour se protéger des Titans, des humanoïdes géants qui dévorent les humains.",
+            "author": "Hajime Isayama",
+            "publicationYear": 2009,
+            "rating": 9.2
+          },
+          {
+            "id": 4,
+            "name": "Dragon Ball",
+            "coverUrl": "https://m.media-amazon.com/images/M/MV5BMGMyOThiMGUtYmFmZi00YWM0LWJiM2QtZGMwM2Q2ODE4MzhhXkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_FMjpg_UX1000_.jpg",
+            "description": "Les aventures de Son Goku de son enfance à l'âge adulte alors qu'il s'entraîne en arts martiaux et explore le monde à la recherche des sept Dragon Balls.",
+            "author": "Akira Toriyama",
+            "publicationYear": 1984,
+            "rating": 8.7
+          },
+          {
+            "id": 5,
+            "name": "My Hero Academia",
+            "coverUrl": "https://m.media-amazon.com/images/M/MV5BOGZlNjZhZTItYTI1Ni00MjdkLTk4NDItZDhlMDJhZGQ2ZTQ2XkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_FMjpg_UX1000_.jpg",
+            "description": "Dans un monde où 80% de la population possède des super-pouvoirs, un garçon sans pouvoir rêve de devenir un héros.",
+            "author": "Kōhei Horikoshi",
+            "publicationYear": 2014,
+            "rating": 8.3
+          }
+        ]
+      }
