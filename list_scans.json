@@ -1,50 +1,114 @@
-
 {
-        "mangas": [
-          {
-            "id": 1,
-            "name": "One Piece",
-            "coverUrl": "https://m.media-amazon.com/images/M/MV5BODcwNWE3OTMtMDc3MS00NDFjLWE1OTAtNDU3NjgxODMxY2UyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg",
-            "description": "L'histoire suit les aventures de Monkey D. Luffy, un jeune garçon dont le corps a acquis les propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon.",
-            "author": "Eiichiro Oda",
-            "publicationYear": 1997,
-            "rating": 9.0
-          },
-          {
-            "id": 2,
-            "name": "Naruto",
-            "coverUrl": "https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGYwYWM0YjdhYGYwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
-            "description": "Naruto Uzumaki, un jeune ninja qui cherche à être reconnu par ses pairs et qui rêve de devenir le Hokage, le chef de son village.",
-            "author": "Masashi Kishimoto",
-            "publicationYear": 1999,
-            "rating": 8.5
-          },
-          {
-            "id": 3,
-            "name": "Attack on Titan",
-            "coverUrl": "https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_FMjpg_UX1000_.jpg",
-            "description": "Dans un monde où l'humanité vit entourée d'énormes murs pour se protéger des Titans, des humanoïdes géants qui dévorent les humains.",
-            "author": "Hajime Isayama",
-            "publicationYear": 2009,
-            "rating": 9.2
-          },
-          {
-            "id": 4,
-            "name": "Dragon Ball",
-            "coverUrl": "https://m.media-amazon.com/images/M/MV5BMGMyOThiMGUtYmFmZi00YWM0LWJiM2QtZGMwM2Q2ODE4MzhhXkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_FMjpg_UX1000_.jpg",
-            "description": "Les aventures de Son Goku de son enfance à l'âge adulte alors qu'il s'entraîne en arts martiaux et explore le monde à la recherche des sept Dragon Balls.",
-            "author": "Akira Toriyama",
-            "publicationYear": 1984,
-            "rating": 8.7
-          },
-          {
-            "id": 5,
-            "name": "My Hero Academia",
-            "coverUrl": "https://m.media-amazon.com/images/M/MV5BOGZlNjZhZTItYTI1Ni00MjdkLTk4NDItZDhlMDJhZGQ2ZTQ2XkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_FMjpg_UX1000_.jpg",
-            "description": "Dans un monde où 80% de la population possède des super-pouvoirs, un garçon sans pouvoir rêve de devenir un héros.",
-            "author": "Kōhei Horikoshi",
-            "publicationYear": 2014,
-            "rating": 8.3
-          }
-        ]
-      }
+  "mangas": [
+    {
+      "id": 1,
+      "name": "Naruto",
+      "coverUrl": "https://example.com/naruto.jpg",
+      "description": "Un jeune ninja qui rêve de devenir Hokage",
+      "author": "Masashi Kishimoto",
+      "publicationYear": 1999,
+      "theme": "Ninja",
+      "type": "Shonen",
+      "genre": "Action, Aventure"
+    },
+    {
+      "id": 2,
+      "name": "One Piece",
+      "coverUrl": "https://example.com/onepiece.jpg",
+      "description": "L'aventure de pirates à la recherche du trésor ultime",
+      "author": "Eiichiro Oda",
+      "publicationYear": 1997,
+      "theme": "Pirates",
+      "type": "Shonen",
+      "genre": "Action, Aventure, Comédie"
+    },
+    {
+      "id": 3,
+      "name": "Death Note",
+      "coverUrl": "https://example.com/deathnote.jpg",
+      "description": "Un étudiant découvre un carnet qui permet de tuer",
+      "author": "Tsugumi Ohba",
+      "publicationYear": 2003,
+      "theme": "Surnaturel",
+      "type": "Shonen",
+      "genre": "Thriller, Psychologique"
+    },
+    {
+      "id": 4,
+      "name": "Attack on Titan",
+      "coverUrl": "https://example.com/aot.jpg",
+      "description": "L'humanité lutte contre des titans géants",
+      "author": "Hajime Isayama",
+      "publicationYear": 2009,
+      "theme": "Post-apocalyptique",
+      "type": "Shonen",
+      "genre": "Action, Drame, Horreur"
+    },
+    {
+      "id": 5,
+      "name": "Dragon Ball",
+      "coverUrl": "https://example.com/dragonball.jpg",
+      "description": "Les aventures de Goku et ses amis",
+      "author": "Akira Toriyama",
+      "publicationYear": 1984,
+      "theme": "Arts martiaux",
+      "type": "Shonen",
+      "genre": "Action, Aventure, Comédie"
+    },
+    {
+      "id": 6,
+      "name": "My Hero Academia",
+      "coverUrl": "https://example.com/mha.jpg",
+      "description": "Un monde où presque tout le monde a des super-pouvoirs",
+      "author": "Kohei Horikoshi",
+      "publicationYear": 2014,
+      "theme": "Super-héros",
+      "type": "Shonen",
+      "genre": "Action, Aventure"
+    },
+    {
+      "id": 7,
+      "name": "Tokyo Ghoul",
+      "coverUrl": "https://example.com/tokyoghoul.jpg",
+      "description": "Un étudiant devient un hybride humain-ghoul",
+      "author": "Sui Ishida",
+      "publicationYear": 2011,
+      "theme": "Horreur",
+      "type": "Seinen",
+      "genre": "Drame, Horreur, Psychologique"
+    },
+    {
+      "id": 8,
+      "name": "Fullmetal Alchemist",
+      "coverUrl": "https://example.com/fma.jpg",
+      "description": "Deux frères recherchent la Pierre Philosophale",
+      "author": "Hiromu Arakawa",
+      "publicationYear": 2001,
+      "theme": "Alchimie",
+      "type": "Shonen",
+      "genre": "Action, Aventure, Drame"
+    },
+    {
+      "id": 9,
+      "name": "Berserk",
+      "coverUrl": "https://example.com/berserk.jpg",
+      "description": "L'histoire sombre de Guts le mercenaire",
+      "author": "Kentaro Miura",
+      "publicationYear": 1989,
+      "theme": "Médiéval-fantastique",
+      "type": "Seinen",
+      "genre": "Action, Drame, Horreur"
+    },
+    {
+      "id": 10,
+      "name": "One Punch Man",
+      "coverUrl": "https://example.com/onepunchman.jpg",
+      "description": "Un héros qui vainc tous ses ennemis en un coup de poing",
+      "author": "ONE",
+      "publicationYear": 2012,
+      "theme": "Super-héros",
+      "type": "Shonen",
+      "genre": "Action, Comédie, Parodie"
+    }
+  ]
+}
