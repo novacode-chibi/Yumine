@@ -2,113 +2,39 @@
   "mangas": [
     {
       "id": 1,
+      "name": "One Piece",
+      "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/29/OnePieceVolume1Cover.jpg",
+      "description": "Monkey D. Luffy part en mer pour devenir le Roi des Pirates.",
+      "author": "Eiichiro Oda",
+      "publicationYear": 1997,
+      "theme": "Aventure",
+      "type": "Shonen",
+      "genre": "Action, Aventure, Comédie",
+      "telegramLink": "https://t.me/onepiece_officiel"
+    },
+    {
+      "id": 2,
       "name": "Naruto",
-      "coverUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVEiJtZZPbBtFFMZ/M7ubXdtdb1xSFyeilBapySVU8h8OoFaooFSqiihIVIpQBKci6KEg9Q6H9kovIHoCIVQJJCKE1ENFjnAgcaSGC6rEnxBwA04Tx43t2FnvDAfjkNibxgHxnWb2e/u992bee7tCa00YFsffekFY+nUzFtjW0LrvjRXrCDIAaPLlW0nHL0SsZtVoaF98mLrx3pdhOqLtYPHChahZcYYO7KvPFxvRl5XPp1sN3adWiD1ZAqD6XYK1b/dvE5IWryTt2udLFedwc1+9kLp+vbbpoDh+6TklxBeAi9TL0taeWpdmZzQDry0AcO+jQ12RyohqqoYoo8RDwJrU+qXkjWtfi8Xxt58BdQuwQs9qC/afLwCw8tnQbqYAPsgxE1S6F3EAIXux2oQFKm0ihMsOF71dHYx+f3NND68ghCu1YIoePPQN1pGRABkJ6Bus96CutRZMydTl+TvuiRW1m3n0eDl0vRPcEysqdXn+jsQPsrHMquGeXEaY4Yk4wxWcY5V/9scqOMOVUFthatyTy8QyqwZ+kDURKoMWxNKr2EeqVKcTNOajqKoBgOE28U4tdQl5p5bwCw7BWquaZSzAPlwjlithJtp3pTImSqQRrb2Z8PHGigD4RZuNX6JYj6wj7O4TFLbCO/Mn/m8R+h6rYSUb3ekokRY6f/YukArN979jcW+V/S8g0eT/N3VN3kTqWbQ428m9/8k0P/1aIhF36PccEl6EhOcAUCrXKZXXWS3XKd2vc/TRBG9O5ELC17MmWubD2nKhUKZa26Ba2+D3P+4/MNCFwg59oWVeYhkzgN/JDR8deKBoD7Y+ljEjGZ0sosXVTvbc6RHirr2reNy1OXd6pJsQ+gqjk8VWFYmHrwBzW/n+uMPFiRwHB2I7ih8ciHFxIkd/3Omk5tCDV1t+2nNu5sxxpDFNx+huNhVT3/zMDz8usXC3ddaHBj1GHj/As08fwTS7Kt1HBTmyN29vdwAw+/wbwLVOJ3uAD1wi/dUH7Qei66PfyuRj4Ik9is+hglfbkbfR3cnZm7chlUWLdwmprtCohX4HUtlOcQjLYCu+fzGJH2QRKvP3UNz8bWk1qMxjGTOMThZ3kvgLI5AzFfo379UAAAAASUVORK5CYII=",
-      "description": "Un jeune ninja qui rêve de devenir Hokage",
+      "coverUrl": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg",
+      "description": "L’histoire de Naruto Uzumaki, un jeune ninja qui rêve de devenir Hokage.",
       "author": "Masashi Kishimoto",
       "publicationYear": 1999,
       "theme": "Ninja",
       "type": "Shonen",
-      "genre": "Action, Aventure"
-    },
-    {
-      "id": 2,
-      "name": "One Piece",
-      "coverUrl": "https://example.com/onepiece.jpg",
-      "description": "L'aventure de pirates à la recherche du trésor ultime",
-      "author": "Eiichiro Oda",
-      "publicationYear": 1997,
-      "theme": "Pirates",
-      "type": "Shonen",
-      "genre": "Action, Aventure, Comédie"
+      "genre": "Action, Aventure, Fantastique",
+      "telegramLink": "https://t.me/naruto_manga"
     },
     {
       "id": 3,
-      "name": "Death Note",
-      "coverUrl": "https://example.com/deathnote.jpg",
-      "description": "Un étudiant découvre un carnet qui permet de tuer",
-      "author": "Tsugumi Ohba",
-      "publicationYear": 2003,
-      "theme": "Surnaturel",
-      "type": "Shonen",
-      "genre": "Thriller, Psychologique"
-    },
-    {
-      "id": 4,
       "name": "Attack on Titan",
-      "coverUrl": "https://example.com/aot.jpg",
-      "description": "L'humanité lutte contre des titans géants",
+      "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Shingeki_no_Kyojin_manga_volume_1.jpg",
+      "description": "L’humanité lutte pour survivre contre les Titans dans un monde post-apocalyptique.",
       "author": "Hajime Isayama",
       "publicationYear": 2009,
-      "theme": "Post-apocalyptique",
+      "theme": "Survie",
       "type": "Shonen",
-      "genre": "Action, Drame, Horreur"
-    },
-    {
-      "id": 5,
-      "name": "Dragon Ball",
-      "coverUrl": "https://example.com/dragonball.jpg",
-      "description": "Les aventures de Goku et ses amis",
-      "author": "Akira Toriyama",
-      "publicationYear": 1984,
-      "theme": "Arts martiaux",
-      "type": "Shonen",
-      "genre": "Action, Aventure, Comédie"
-    },
-    {
-      "id": 6,
-      "name": "My Hero Academia",
-      "coverUrl": "https://example.com/mha.jpg",
-      "description": "Un monde où presque tout le monde a des super-pouvoirs",
-      "author": "Kohei Horikoshi",
-      "publicationYear": 2014,
-      "theme": "Super-héros",
-      "type": "Shonen",
-      "genre": "Action, Aventure"
-    },
-    {
-      "id": 7,
-      "name": "Tokyo Ghoul",
-      "coverUrl": "https://example.com/tokyoghoul.jpg",
-      "description": "Un étudiant devient un hybride humain-ghoul",
-      "author": "Sui Ishida",
-      "publicationYear": 2011,
-      "theme": "Horreur",
-      "type": "Seinen",
-      "genre": "Drame, Horreur, Psychologique"
-    },
-    {
-      "id": 8,
-      "name": "Fullmetal Alchemist",
-      "coverUrl": "https://example.com/fma.jpg",
-      "description": "Deux frères recherchent la Pierre Philosophale",
-      "author": "Hiromu Arakawa",
-      "publicationYear": 2001,
-      "theme": "Alchimie",
-      "type": "Shonen",
-      "genre": "Action, Aventure, Drame"
-    },
-    {
-      "id": 9,
-      "name": "Berserk",
-      "coverUrl": "https://example.com/berserk.jpg",
-      "description": "L'histoire sombre de Guts le mercenaire",
-      "author": "Kentaro Miura",
-      "publicationYear": 1989,
-      "theme": "Médiéval-fantastique",
-      "type": "Seinen",
-      "genre": "Action, Drame, Horreur"
-    },
-    {
-      "id": 10,
-      "name": "One Punch Man",
-      "coverUrl": "https://example.com/onepunchman.jpg",
-      "description": "Un héros qui vainc tous ses ennemis en un coup de poing",
-      "author": "ONE",
-      "publicationYear": 2012,
-      "theme": "Super-héros",
-      "type": "Shonen",
-      "genre": "Action, Comédie, Parodie"
+      "genre": "Action, Drame, Surnaturel",
+      "telegramLink": "https://t.me/aot_fans"
     }
   ]
 }
