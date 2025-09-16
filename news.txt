@@ -3,3 +3,8 @@ content::test
 date::2025-08-06
 image::images/icon.jpeg
 ---
+title::a
+content::a
+date::2025-09-17
+image::images/scaled_1000136735.jpg
+---
