@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "titre": "One Piece",
+    "image": "https://example.com/one-piece.jpg",
+    "episodes": {
+      "vostfr": [
+        {
+          "numero": 1,
+          "titre": "Je suis Luffy ! L'homme qui va devenir le Seigneur des Pirates !",
+          "lien": "https://sibnet.com/embed/one-piece-ep1"
+        },
+        {
+          "numero": 2,
+          "titre": "L'arrivée du grand corsaire ! Le pirate au clown, Buggy !",
+          "lien": "https://sibnet.com/embed/one-piece-ep2"
+        }
+      ],
+      "vf": [
+        {
+          "numero": 1,
+          "titre": "Je suis Luffy ! Version Française",
+          "lien": "https://sibnet.com/embed/one-piece-ep1-vf"
+        }
+      ]
+    }
+  },
+  {
+    "titre": "Naruto",
+    "image": "https://example.com/naruto.jpg",
+    "episodes": {
+      "vostfr": [
+        {
+          "numero": 1,
+          "titre": "Arrivée à Konoha",
+          "lien": "https://sibnet.com/embed/naruto-ep1"
+        }
+      ]
+    }
+  }
+]
