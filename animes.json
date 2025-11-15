@@ -7,19 +7,19 @@
         {
           "numero": 1,
           "titre": "Je suis Luffy ! L'homme qui va devenir le Seigneur des Pirates !",
-          "lien": "https://sibnet.com/embed/one-piece-ep1"
+          "lien": "https://video.sibnet.ru/shell.php?videoid=5960779"
         },
         {
           "numero": 2,
           "titre": "L'arrivée du grand corsaire ! Le pirate au clown, Buggy !",
-          "lien": "https://sibnet.com/embed/one-piece-ep2"
+          "lien": "https://video.sibnet.ru/shell.php?videoid=5960779"
         }
       ],
       "vf": [
         {
           "numero": 1,
           "titre": "Je suis Luffy ! Version Française",
-          "lien": "https://sibnet.com/embed/one-piece-ep1-vf"
+          "lien": "https://video.sibnet.ru/shell.php?videoid=5960779"
         }
       ]
     }
@@ -32,7 +32,7 @@
         {
           "numero": 1,
           "titre": "Arrivée à Konoha",
-          "lien": "https://sibnet.com/embed/naruto-ep1"
+          "lien": "https://video.sibnet.ru/shell.php?videoid=5960779"
         }
       ]
     }
