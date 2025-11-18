@@ -2,64 +2,39 @@
   {
     "titre": "One Piece",
     "image": "https://example.com/one-piece.jpg",
-    "saisons": {
-      "1": {
-        "titre": "Saison 1 - East Blue",
-        "image": "https://example.com/one-piece-s1.jpg",
-        "episodes": {
-          "vostfr": [
-            {
-              "numero": 1,
-              "titre": "Je suis Luffy ! L'homme qui va devenir le Seigneur des Pirates !",
-              "lien": "https://sibnet.com/embed/one-piece-s1-ep1"
-            },
-            {
-              "numero": 2, 
-              "titre": "L'arrivée du grand corsaire ! Le pirate au clown, Buggy !",
-              "lien": "https://sibnet.com/embed/one-piece-s1-ep2"
-            }
-          ],
-          "vf": [
-            {
-              "numero": 1,
-              "titre": "Je suis Luffy ! Version Française",
-              "lien": "https://sibnet.com/embed/one-piece-s1-ep1-vf"
-            }
-          ]
+    "episodes": {
+      "vostfr": [
+        {
+          "numero": 1,
+          "titre": "Je suis Luffy ! L'homme qui va devenir le Seigneur des Pirates !",
+          "lien": "https://sibnet.com/embed/one-piece-ep1"
+        },
+        {
+          "numero": 2,
+          "titre": "L'arrivée du grand corsaire ! Le pirate au clown, Buggy !",
+          "lien": "https://sibnet.com/embed/one-piece-ep2"
         }
-      },
-      "2": {
-        "titre": "Saison 2 - Baroque Works",
-        "image": "https://example.com/one-piece-s2.jpg", 
-        "episodes": {
-          "vostfr": [
-            {
-              "numero": 1,
-              "titre": "La princesse et le royaume caché",
-              "lien": "https://sibnet.com/embed/one-piece-s2-ep1"
-            }
-          ]
+      ],
+      "vf": [
+        {
+          "numero": 1,
+          "titre": "Je suis Luffy ! Version Française",
+          "lien": "https://sibnet.com/embed/one-piece-ep1-vf"
         }
-      }
+      ]
     }
   },
   {
     "titre": "Naruto",
     "image": "https://example.com/naruto.jpg",
-    "saisons": {
-      "1": {
-        "titre": "Saison 1 - Prologue",
-        "image": "https://example.com/naruto-s1.jpg",
-        "episodes": {
-          "vostfr": [
-            {
-              "numero": 1,
-              "titre": "Arrivée à Konoha",
-              "lien": "https://sibnet.com/embed/naruto-s1-ep1"
-            }
-          ]
+    "episodes": {
+      "vostfr": [
+        {
+          "numero": 1,
+          "titre": "Arrivée à Konoha",
+          "lien": "https://sibnet.com/embed/naruto-ep1"
         }
-      }
+      ]
     }
   }
 ]
