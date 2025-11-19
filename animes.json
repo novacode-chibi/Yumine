@@ -12,6 +12,21 @@
   {
     "titre": "test",
     "image": "https://example.png",
-    "saisons": {}
+    "saisons": {
+      "1": {
+        "titre": "je ne sais pas ",
+        "image": "https://example. com",
+        "episodes": {
+          "vostfr": [
+            {
+              "numero": 1,
+              "titre": "episode 1",
+              "lien": "https://stream. com"
+            }
+          ],
+          "vf": []
+        }
+      }
+    }
   }
 ]
