@@ -1,0 +1,33 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "title": "Quiz Général",
+      "questions": [
+        {
+          "type": "true_false",
+          "question": "Le soleil est une étoile.",
+          "correct_answer": "true"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Quelle est la capitale de la France ?",
+          "answers": [
+            { "text": "Paris", "is_correct": true },
+            { "text": "Lyon", "is_correct": false },
+            { "text": "Marseille", "is_correct": false }
+          ]
+        },
+        {
+          "type": "multiple_choice_image",
+          "question": "Quel animal est un lion ?",
+          "answers": [
+            { "image": "https://…/lion.jpg", "is_correct": true },
+            { "image": "https://…/chien.jpg", "is_correct": false },
+            { "image": "https://…/chat.jpg", "is_correct": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
