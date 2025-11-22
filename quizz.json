@@ -2,30 +2,146 @@
   "quizzes": [
     {
       "id": 1,
-      "title": "Quiz Général",
+      "title": "Naruto",
       "questions": [
         {
+          "type": "multiple_choice_image",
+          "question": "Quel est ce personnage ?",
+          "answers": [
+            { "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Naruto_Uzumaki.png", "is_correct": true },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/5/5c/Sasuke_Uchiha.png", "is_correct": false },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/3/31/Sakura_Haruno.png", "is_correct": false }
+          ]
+        },
+        {
           "type": "true_false",
-          "question": "Le soleil est une étoile.",
+          "question": "Naruto est un shinobi du village de Konoha.",
           "correct_answer": "true"
         },
         {
           "type": "multiple_choice",
-          "question": "Quelle est la capitale de la France ?",
+          "question": "Comment s'appelle la technique interdite que Naruto apprend ?",
           "answers": [
-            { "text": "Paris", "is_correct": true },
-            { "text": "Lyon", "is_correct": false },
-            { "text": "Marseille", "is_correct": false }
+            { "text": "Rasengan", "is_correct": true },
+            { "text": "Chidori", "is_correct": false },
+            { "text": "Bankai", "is_correct": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "One Piece",
+      "questions": [
+        {
+          "type": "multiple_choice_image",
+          "question": "Quel est ce symbole ?",
+          "answers": [
+            { "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Straw_Hat_Pirates_flag.png/1200px-Straw_Hat_Pirates_flag.png", "is_correct": true },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/6/6d/Heart_Pirates_Jolly_Roger.png", "is_correct": false },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/4/44/WhitebeardPirates.jpg", "is_correct": false }
           ]
         },
         {
-          "type": "multiple_choice_image",
-          "question": "Quel animal est un lion ?",
+          "type": "multiple_choice",
+          "question": "Quel est le rêve de Luffy ?",
           "answers": [
-            { "image": "https://…/lion.jpg", "is_correct": true },
-            { "image": "https://…/chien.jpg", "is_correct": false },
-            { "image": "https://…/chat.jpg", "is_correct": false }
+            { "text": "Devenir le Roi des Pirates", "is_correct": true },
+            { "text": "Détruire le Gouvernement Mondial", "is_correct": false },
+            { "text": "Trouver un trésor sur Alabasta", "is_correct": false }
           ]
+        },
+        {
+          "type": "true_false",
+          "question": "Luffy utilise le pouvoir du fruit du démon Gomu Gomu.",
+          "correct_answer": "true"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Attack on Titan",
+      "questions": [
+        {
+          "type": "multiple_choice_image",
+          "question": "Quel est ce monstre géant ?",
+          "answers": [
+            { "image": "https://wallpapers.com/attack-on-titan-poster-1920-x-1080-wallpaper-grcd4s1i4jeqy8jh.html", "is_correct": true },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/One_Piece_Logo.png", "is_correct": false },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Naruto_Uzumaki.png", "is_correct": false }
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Quel est le nom du mur principal protégeant l'humanité au début de la série ?",
+          "answers": [
+            { "text": "Mur Maria", "is_correct": true },
+            { "text": "Mur Sina", "is_correct": false },
+            { "text": "Mur Rose", "is_correct": false }
+          ]
+        },
+        {
+          "type": "true_false",
+          "question": "Eren Jaeger est capable de se transformer en Titan.",
+          "correct_answer": "true"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Demon Slayer (Kimetsu no Yaiba)",
+      "questions": [
+        {
+          "type": "multiple_choice_image",
+          "question": "Quel personnage est-ce ?",
+          "answers": [
+            { "image": "https://upload.wikimedia.org/wikipedia/en/3/39/Kimetsu_no_Yaiba_Logo.png", "is_correct": false },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kamado_Tanjiro.png", "is_correct": true },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/8/8b/Kamado_Nezuo.png", "is_correct": false }
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Comment s'appelle la sœur de Tanjiro ?",
+          "answers": [
+            { "text": "Nezuko", "is_correct": true },
+            { "text": "Sakura", "is_correct": false },
+            { "text": "Hinata", "is_correct": false }
+          ]
+        },
+        {
+          "type": "true_false",
+          "question": "Tanjiro utilise un katana pour combattre les démons.",
+          "correct_answer": "true"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "questions": [
+        {
+          "type": "multiple_choice_image",
+          "question": "Quel est ce personnage ?",
+          "answers": [
+            { "image": "https://upload.wikimedia.org/wikipedia/en/0/04/Edward_Elric.png", "is_correct": true },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Alphonse_Elric.png", "is_correct": false },
+            { "image": "https://upload.wikimedia.org/wikipedia/en/7/73/Roy_Mustang.png", "is_correct": false }
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Quel est le principe fondamental de l'alchimie dans l’anime ?",
+          "answers": [
+            { "text": "Échange équivalent", "is_correct": true },
+            { "text": "Transmutation dangereuse", "is_correct": false },
+            { "text": "Transformation infinie", "is_correct": false }
+          ]
+        },
+        {
+          "type": "true_false",
+          "question": "Alphonse Elric est un alchimiste humain tout au long de la série.",
+          "correct_answer": "false"
         }
       ]
     }
