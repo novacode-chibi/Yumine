@@ -3,14 +3,24 @@
     {
       "id": 1,
       "title": "Naruto",
+      "mal_id": 20,
       "questions": [
         {
           "type": "multiple_choice_image",
           "question": "Quel est ce personnage ?",
           "answers": [
-            { "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Naruto_Uzumaki.png", "is_correct": true },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/5/5c/Sasuke_Uchiha.png", "is_correct": false },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/3/31/Sakura_Haruno.png", "is_correct": false }
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": true
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            }
           ]
         },
         {
@@ -32,14 +42,24 @@
     {
       "id": 2,
       "title": "One Piece",
+      "mal_id": 21,
       "questions": [
         {
           "type": "multiple_choice_image",
           "question": "Quel est ce symbole ?",
           "answers": [
-            { "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Straw_Hat_Pirates_flag.png/1200px-Straw_Hat_Pirates_flag.png", "is_correct": true },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/6/6d/Heart_Pirates_Jolly_Roger.png", "is_correct": false },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/4/44/WhitebeardPirates.jpg", "is_correct": false }
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": true
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            }
           ]
         },
         {
@@ -61,14 +81,24 @@
     {
       "id": 3,
       "title": "Attack on Titan",
+      "mal_id": 16498,
       "questions": [
         {
           "type": "multiple_choice_image",
           "question": "Quel est ce monstre géant ?",
           "answers": [
-            { "image": "https://wallpapers.com/attack-on-titan-poster-1920-x-1080-wallpaper-grcd4s1i4jeqy8jh.html", "is_correct": true },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/One_Piece_Logo.png", "is_correct": false },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Naruto_Uzumaki.png", "is_correct": false }
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": true
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            }
           ]
         },
         {
@@ -89,15 +119,25 @@
     },
     {
       "id": 4,
-      "title": "Demon Slayer (Kimetsu no Yaiba)",
+      "title": "Demon Slayer",
+      "mal_id": 38000,
       "questions": [
         {
           "type": "multiple_choice_image",
           "question": "Quel personnage est-ce ?",
           "answers": [
-            { "image": "https://upload.wikimedia.org/wikipedia/en/3/39/Kimetsu_no_Yaiba_Logo.png", "is_correct": false },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kamado_Tanjiro.png", "is_correct": true },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/8/8b/Kamado_Nezuo.png", "is_correct": false }
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": true
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            }
           ]
         },
         {
@@ -119,14 +159,24 @@
     {
       "id": 5,
       "title": "Fullmetal Alchemist: Brotherhood",
+      "mal_id": 5114,
       "questions": [
         {
           "type": "multiple_choice_image",
           "question": "Quel est ce personnage ?",
           "answers": [
-            { "image": "https://upload.wikimedia.org/wikipedia/en/0/04/Edward_Elric.png", "is_correct": true },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Alphonse_Elric.png", "is_correct": false },
-            { "image": "https://upload.wikimedia.org/wikipedia/en/7/73/Roy_Mustang.png", "is_correct": false }
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": true
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            },
+            {
+              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+              "is_correct": false
+            }
           ]
         },
         {
