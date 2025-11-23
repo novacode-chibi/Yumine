@@ -1,197 +1,171 @@
 {
-  "quizzes": [
+  "sections": [
     {
-      "id": 1,
-      "title": "Naruto",
-      "mal_id": 20,
-      "questions": [
+      "id": "mega_100_questions",
+      "title": "Mega Quiz – 100 Questions",
+      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+      "description": "Réponds à 100 questions provenant de 5 animes populaires.",
+      "quizzes": [
         {
-          "type": "multiple_choice_image",
-          "question": "Quel est ce personnage ?",
-          "answers": [
+          "anime": "Naruto",
+          "questions": [
             {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": true
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
+              "q": "Qui est le meilleur ami de Naruto ?",
+              "options": ["Sasuke", "Shikamaru", "Kiba", "Gaara"],
+              "answer": "Sasuke"
             }
           ]
         },
         {
-          "type": "true_false",
-          "question": "Naruto est un shinobi du village de Konoha.",
-          "correct_answer": "true"
+          "anime": "One Piece",
+          "questions": [
+            {
+              "q": "Quel est le rêve de Luffy ?",
+              "options": ["Devenir Marine", "Devenir Roi des Pirates", "Trouver All Blue", "Vaincre le monde"],
+              "answer": "Devenir Roi des Pirates"
+            }
+          ]
         },
         {
-          "type": "multiple_choice",
-          "question": "Comment s'appelle la technique interdite que Naruto apprend ?",
-          "answers": [
-            { "text": "Rasengan", "is_correct": true },
-            { "text": "Chidori", "is_correct": false },
-            { "text": "Bankai", "is_correct": false }
+          "anime": "Bleach",
+          "questions": [
+            {
+              "q": "Quel est le nom du zanpakutō d’Ichigo ?",
+              "options": ["Zangetsu", "Senbonzakura", "Benihime", "Hyōrinmaru"],
+              "answer": "Zangetsu"
+            }
+          ]
+        },
+        {
+          "anime": "Attack on Titan",
+          "questions": [
+            {
+              "q": "Comment s'appelle la mère adoptive d’Eren ?",
+              "options": ["Carla", "Marlene", "Helena", "Sasha"],
+              "answer": "Carla"
+            }
+          ]
+        },
+        {
+          "anime": "Demon Slayer",
+          "questions": [
+            {
+              "q": "Comment s'appelle la sœur de Tanjiro ?",
+              "options": ["Kanae", "Shinobu", "Nezuko", "Kanao"],
+              "answer": "Nezuko"
+            }
           ]
         }
       ]
     },
+
     {
-      "id": 2,
-      "title": "One Piece",
-      "mal_id": 21,
-      "questions": [
+      "id": "personality_tests",
+      "title": "Tests de Personnalité",
+      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+      "tests": [
         {
-          "type": "multiple_choice_image",
-          "question": "Quel est ce symbole ?",
-          "answers": [
+          "id": "naruto_personality",
+          "title": "Quel personnage de Naruto es-tu ?",
+          "questions": [
             {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": true
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
+              "q": "Comment réagis-tu face au danger ?",
+              "options": {
+                "A": "J'agis sans réfléchir",
+                "B": "Je réfléchis avant d'agir",
+                "C": "Je protège mes amis",
+                "D": "Je reste calme"
+              }
             }
-          ]
+          ],
+          "results": {
+            "A": "Naruto",
+            "B": "Sasuke",
+            "C": "Sakura",
+            "D": "Kakashi"
+          }
         },
+
         {
-          "type": "multiple_choice",
-          "question": "Quel est le rêve de Luffy ?",
-          "answers": [
-            { "text": "Devenir le Roi des Pirates", "is_correct": true },
-            { "text": "Détruire le Gouvernement Mondial", "is_correct": false },
-            { "text": "Trouver un trésor sur Alabasta", "is_correct": false }
-          ]
-        },
-        {
-          "type": "true_false",
-          "question": "Luffy utilise le pouvoir du fruit du démon Gomu Gomu.",
-          "correct_answer": "true"
+          "id": "aot_personality",
+          "title": "Quel Titan serais-tu ?",
+          "questions": [
+            {
+              "q": "Que ferais-tu si tu avais un pouvoir immense ?",
+              "options": {
+                "A": "Je protégerais les autres",
+                "B": "Je me battrai pour la liberté",
+                "C": "Je contrôlerais le monde",
+                "D": "Je me cacherais"
+              }
+            }
+          ],
+          "results": {
+            "A": "Titan Cuirassé",
+            "B": "Titan Assaillant",
+            "C": "Titan Colossal",
+            "D": "Titan Bestial"
+          }
         }
       ]
     },
+
     {
-      "id": 3,
-      "title": "Attack on Titan",
-      "mal_id": 16498,
-      "questions": [
+      "id": "all_quizzes",
+      "title": "Tous les Quiz",
+      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+      "items": [
+        { "id": "mega_100_questions", "title": "Mega Quiz – 100 Questions" },
+        { "id": "naruto_quiz", "title": "Quiz Naruto" },
+        { "id": "onepiece_quiz", "title": "Quiz One Piece" },
+        { "id": "personality_tests", "title": "Tests de personnalité" }
+      ]
+    },
+
+    {
+      "id": "recent_quizzes",
+      "title": "Quiz Récents",
+      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+      "recent": [
         {
-          "type": "multiple_choice_image",
-          "question": "Quel est ce monstre géant ?",
-          "answers": [
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": true
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
-            }
-          ]
+          "id": "demon_slayer_quiz",
+          "title": "Quiz Demon Slayer",
+          "date": "2025-11-15"
         },
         {
-          "type": "multiple_choice",
-          "question": "Quel est le nom du mur principal protégeant l'humanité au début de la série ?",
-          "answers": [
-            { "text": "Mur Maria", "is_correct": true },
-            { "text": "Mur Sina", "is_correct": false },
-            { "text": "Mur Rose", "is_correct": false }
-          ]
-        },
-        {
-          "type": "true_false",
-          "question": "Eren Jaeger est capable de se transformer en Titan.",
-          "correct_answer": "true"
+          "id": "naruto_personality",
+          "title": "Test Naruto – Personnalité",
+          "date": "2025-11-10"
         }
       ]
     },
+
     {
-      "id": 4,
-      "title": "Demon Slayer",
-      "mal_id": 38000,
-      "questions": [
+      "id": "theme_quizzes",
+      "title": "Quiz Thématiques",
+      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+      "themes": [
         {
-          "type": "multiple_choice_image",
-          "question": "Quel personnage est-ce ?",
-          "answers": [
+          "id": "villains_quiz",
+          "title": "Les méchants emblématiques",
+          "questions": [
             {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": true
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
+              "q": "Qui est le chef de l’Akatsuki ?",
+              "options": ["Pain", "Madara", "Itachi", "Obito"],
+              "answer": "Pain"
             }
           ]
         },
         {
-          "type": "multiple_choice",
-          "question": "Comment s'appelle la sœur de Tanjiro ?",
-          "answers": [
-            { "text": "Nezuko", "is_correct": true },
-            { "text": "Sakura", "is_correct": false },
-            { "text": "Hinata", "is_correct": false }
-          ]
-        },
-        {
-          "type": "true_false",
-          "question": "Tanjiro utilise un katana pour combattre les démons.",
-          "correct_answer": "true"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Fullmetal Alchemist: Brotherhood",
-      "mal_id": 5114,
-      "questions": [
-        {
-          "type": "multiple_choice_image",
-          "question": "Quel est ce personnage ?",
-          "answers": [
+          "id": "quotes_quiz",
+          "title": "Qui a dit cette phrase ?",
+          "questions": [
             {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": true
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
-            },
-            {
-              "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-              "is_correct": false
+              "q": "« Je deviendrai le Roi des Pirates ! »",
+              "options": ["Ace", "Luffy", "Zoro", "Shanks"],
+              "answer": "Luffy"
             }
           ]
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Quel est le principe fondamental de l'alchimie dans l’anime ?",
-          "answers": [
-            { "text": "Échange équivalent", "is_correct": true },
-            { "text": "Transmutation dangereuse", "is_correct": false },
-            { "text": "Transformation infinie", "is_correct": false }
-          ]
-        },
-        {
-          "type": "true_false",
-          "question": "Alphonse Elric est un alchimiste humain tout au long de la série.",
-          "correct_answer": "false"
         }
       ]
     }
