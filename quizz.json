@@ -1,172 +1,181 @@
 {
-  "sections": [
+  "quizzes": [
     {
-      "id": "mega_100_questions",
-      "title": "Mega Quiz – 100 Questions",
-      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-      "description": "Réponds à 100 questions provenant de 5 animes populaires.",
-      "quizzes": [
+      "id": 1,
+      "title": "Anime Quiz #1",
+      "mal_id": 1001,
+      "questions": [
         {
-          "anime": "Naruto",
-          "questions": [
-            {
-              "q": "Qui est le meilleur ami de Naruto ?",
-              "options": ["Sasuke", "Shikamaru", "Kiba", "Gaara"],
-              "answer": "Sasuke"
-            }
+          "type": "multiple_choice_image",
+          "question": "Quel personnage apparaît sur l’image ?",
+          "answers": [
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
           ]
         },
         {
-          "anime": "One Piece",
-          "questions": [
-            {
-              "q": "Quel est le rêve de Luffy ?",
-              "options": ["Devenir Marine", "Devenir Roi des Pirates", "Trouver All Blue", "Vaincre le monde"],
-              "answer": "Devenir Roi des Pirates"
-            }
-          ]
+          "type": "true_false",
+          "question": "Cet anime contient des scènes d'action.",
+          "correct_answer": "true"
         },
         {
-          "anime": "Bleach",
-          "questions": [
-            {
-              "q": "Quel est le nom du zanpakutō d’Ichigo ?",
-              "options": ["Zangetsu", "Senbonzakura", "Benihime", "Hyōrinmaru"],
-              "answer": "Zangetsu"
-            }
-          ]
-        },
-        {
-          "anime": "Attack on Titan",
-          "questions": [
-            {
-              "q": "Comment s'appelle la mère adoptive d’Eren ?",
-              "options": ["Carla", "Marlene", "Helena", "Sasha"],
-              "answer": "Carla"
-            }
-          ]
-        },
-        {
-          "anime": "Demon Slayer",
-          "questions": [
-            {
-              "q": "Comment s'appelle la sœur de Tanjiro ?",
-              "options": ["Kanae", "Shinobu", "Nezuko", "Kanao"],
-              "answer": "Nezuko"
-            }
+          "type": "multiple_choice",
+          "question": "Quel est le thème principal de cet anime ?",
+          "answers": [
+            { "text": "Aventure", "is_correct": true },
+            { "text": "Romance", "is_correct": false },
+            { "text": "Sport", "is_correct": false }
           ]
         }
+        // ... 17 autres questions similaires
       ]
     },
 
     {
-      "id": "personality_tests",
-      "title": "Tests de Personnalité",
-      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-      "tests": [
+      "id": 2,
+      "title": "Anime Quiz #2",
+      "mal_id": 1002,
+      "questions": [
         {
-          "id": "naruto_personality",
-          "title": "Quel personnage de Naruto es-tu ?",
-          "questions": [
-            {
-              "q": "Comment réagis-tu face au danger ?",
-              "options": {
-                "A": "J'agis sans réfléchir",
-                "B": "Je réfléchis avant d'agir",
-                "C": "Je protège mes amis",
-                "D": "Je reste calme"
-              }
-            }
-          ],
-          "results": {
-            "A": "Naruto",
-            "B": "Sasuke",
-            "C": "Sakura",
-            "D": "Kakashi"
-          }
-        },
-
-        {
-          "id": "aot_personality",
-          "title": "Quel Titan serais-tu ?",
-          "questions": [
-            {
-              "q": "Que ferais-tu si tu avais un pouvoir immense ?",
-              "options": {
-                "A": "Je protégerais les autres",
-                "B": "Je me battrai pour la liberté",
-                "C": "Je contrôlerais le monde",
-                "D": "Je me cacherais"
-              }
-            }
-          ],
-          "results": {
-            "A": "Titan Cuirassé",
-            "B": "Titan Assaillant",
-            "C": "Titan Colossal",
-            "D": "Titan Bestial"
-          }
-        }
-      ]
-    },
-
-    {
-      "id": "all_quizzes",
-      "title": "Tous les Quiz",
-      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-      "items": [
-        { "id": "mega_100_questions", "title": "Mega Quiz – 100 Questions" },
-        { "id": "naruto_quiz", "title": "Quiz Naruto" },
-        { "id": "onepiece_quiz", "title": "Quiz One Piece" },
-        { "id": "personality_tests", "title": "Tests de personnalité" }
-      ]
-    },
-
-    {
-      "id": "recent_quizzes",
-      "title": "Quiz Récents",
-      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-      "recent": [
-        {
-          "id": "demon_slayer_quiz",
-          "title": "Quiz Demon Slayer",
-          "date": "2025-11-15"
-        },
-        {
-          "id": "naruto_personality",
-          "title": "Test Naruto – Personnalité",
-          "date": "2025-11-10"
-        }
-      ]
-    },
-
-    {
-      "id": "theme_quizzes",
-      "title": "Quiz Thématiques",
-      "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
-      "themes": [
-        {
-          "id": "villains_quiz",
-          "title": "Les méchants emblématiques",
-          "questions": [
-            {
-              "q": "Qui est le chef de l’Akatsuki ?",
-              "options": ["Pain", "Madara", "Itachi", "Obito"],
-              "answer": "Pain"
-            }
+          "type": "multiple_choice_image",
+          "question": "Quel est le symbole représenté ici ?",
+          "answers": [
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
           ]
         },
         {
-          "id": "quotes_quiz",
-          "title": "Qui a dit cette phrase ?",
-          "questions": [
-            {
-              "q": "« Je deviendrai le Roi des Pirates ! »",
-              "options": ["Ace", "Luffy", "Zoro", "Shanks"],
-              "answer": "Luffy"
-            }
+          "type": "multiple_choice",
+          "question": "Quel rôle joue le protagoniste ?",
+          "answers": [
+            { "text": "Héros", "is_correct": true },
+            { "text": "Antagoniste", "is_correct": false },
+            { "text": "Mentor", "is_correct": false }
+          ]
+        },
+        {
+          "type": "true_false",
+          "question": "Cet anime se déroule dans un univers fantastique.",
+          "correct_answer": "true"
+        }
+        // ... 17 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "Anime Quiz #3",
+      "mal_id": 1003,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "question": "Quel genre décrit le mieux cet anime ?",
+          "answers": [
+            { "text": "Science-fiction", "is_correct": true },
+            { "text": "Tranche de vie", "is_correct": false },
+            { "text": "Musical", "is_correct": false }
+          ]
+        },
+        {
+          "type": "true_false",
+          "question": "Le héros possède un pouvoir spécial.",
+          "correct_answer": "true"
+        },
+        {
+          "type": "multiple_choice_image",
+          "question": "Quel est ce personnage secondaire ?",
+          "answers": [
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
           ]
         }
+        // ... 17 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "Anime Quiz #4",
+      "mal_id": 1004,
+      "questions": [
+        { "type": "true_false", "question": "Cet anime est populaire au Japon.", "correct_answer": "true" }
+        // 19 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 5,
+      "title": "Anime Quiz #5",
+      "mal_id": 1005,
+      "questions": [
+        { "type": "multiple_choice", "question": "Quel est le protagoniste principal ?", "answers": [
+          { "text": "Personnage A", "is_correct": true },
+          { "text": "Personnage B", "is_correct": false },
+          { "text": "Personnage C", "is_correct": false }
+        ]}
+        // 19 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 6,
+      "title": "Anime Quiz #6",
+      "mal_id": 1006,
+      "questions": [
+        { "type": "multiple_choice_image", "question": "Qui est sur cette image ?", "answers": [
+          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
+          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
+        ]}
+        // 19 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 7,
+      "title": "Anime Quiz #7",
+      "mal_id": 1007,
+      "questions": [
+        { "type": "true_false", "question": "Cet anime a reçu un prix.", "correct_answer": "true" }
+        // 19 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 8,
+      "title": "Anime Quiz #8",
+      "mal_id": 1008,
+      "questions": [
+        { "type": "multiple_choice", "question": "Quel est le genre de cet anime ?", "answers": [
+          { "text": "Aventure", "is_correct": true },
+          { "text": "Comédie", "is_correct": false }
+        ]}
+        // 19 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 9,
+      "title": "Anime Quiz #9",
+      "mal_id": 1009,
+      "questions": [
+        { "type": "multiple_choice_image", "question": "Personnage illustré ?", "answers": [
+          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
+          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
+        ]}
+        // 19 autres questions similaires
+      ]
+    },
+
+    {
+      "id": 10,
+      "title": "Anime Quiz #10",
+      "mal_id": 1010,
+      "questions": [
+        { "type": "true_false", "question": "Cet anime est adapté d'un manga.", "correct_answer": "true" }
+        // 19 autres questions similaires
       ]
     }
   ]
