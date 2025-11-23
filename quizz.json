@@ -1,13 +1,14 @@
 {
   "quizzes": [
     {
-      "id": 1,
-      "title": "Anime Quiz #1",
-      "mal_id": 1001,
+      "id": "1",
+      "title": "Naruto",
+      "description": "Testez vos connaissances sur Naruto.",
       "questions": [
         {
+          "id": "n1",
           "type": "multiple_choice_image",
-          "question": "Quel personnage apparaît sur l’image ?",
+          "question": "Quel est ce personnage ?",
           "answers": [
             { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
             { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false },
@@ -15,31 +16,33 @@
           ]
         },
         {
+          "id": "n2",
           "type": "true_false",
-          "question": "Cet anime contient des scènes d'action.",
+          "question": "Naruto est un shinobi du village de Konoha.",
           "correct_answer": "true"
         },
         {
+          "id": "n3",
           "type": "multiple_choice",
-          "question": "Quel est le thème principal de cet anime ?",
+          "question": "Comment s'appelle la technique interdite que Naruto apprend ?",
           "answers": [
-            { "text": "Aventure", "is_correct": true },
-            { "text": "Romance", "is_correct": false },
-            { "text": "Sport", "is_correct": false }
+            { "text": "Rasengan", "is_correct": true },
+            { "text": "Chidori", "is_correct": false },
+            { "text": "Bankai", "is_correct": false }
           ]
         }
-        // ... 17 autres questions similaires
+        // Ajoute ici 17 questions supplémentaires similaires pour Naruto...
       ]
     },
-
     {
-      "id": 2,
-      "title": "Anime Quiz #2",
-      "mal_id": 1002,
+      "id": "2",
+      "title": "One Piece",
+      "description": "Testez vos connaissances sur One Piece.",
       "questions": [
         {
+          "id": "o1",
           "type": "multiple_choice_image",
-          "question": "Quel est le symbole représenté ici ?",
+          "question": "Quel est ce symbole ?",
           "answers": [
             { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
             { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false },
@@ -47,135 +50,147 @@
           ]
         },
         {
+          "id": "o2",
           "type": "multiple_choice",
-          "question": "Quel rôle joue le protagoniste ?",
+          "question": "Quel est le rêve de Luffy ?",
           "answers": [
-            { "text": "Héros", "is_correct": true },
-            { "text": "Antagoniste", "is_correct": false },
-            { "text": "Mentor", "is_correct": false }
+            { "text": "Devenir le Roi des Pirates", "is_correct": true },
+            { "text": "Détruire le Gouvernement Mondial", "is_correct": false },
+            { "text": "Trouver un trésor sur Alabasta", "is_correct": false }
           ]
-        },
-        {
-          "type": "true_false",
-          "question": "Cet anime se déroule dans un univers fantastique.",
-          "correct_answer": "true"
         }
-        // ... 17 autres questions similaires
+        // Ajoute ici 18 questions supplémentaires pour One Piece...
       ]
     },
-
     {
-      "id": 3,
-      "title": "Anime Quiz #3",
-      "mal_id": 1003,
+      "id": "3",
+      "title": "Attack on Titan",
+      "description": "Testez vos connaissances sur Attack on Titan.",
       "questions": [
         {
-          "type": "multiple_choice",
-          "question": "Quel genre décrit le mieux cet anime ?",
-          "answers": [
-            { "text": "Science-fiction", "is_correct": true },
-            { "text": "Tranche de vie", "is_correct": false },
-            { "text": "Musical", "is_correct": false }
-          ]
-        },
-        {
-          "type": "true_false",
-          "question": "Le héros possède un pouvoir spécial.",
-          "correct_answer": "true"
-        },
-        {
+          "id": "snk1",
           "type": "multiple_choice_image",
-          "question": "Quel est ce personnage secondaire ?",
+          "question": "Quel est ce Titan ?",
           "answers": [
             { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
             { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false },
             { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
           ]
         }
-        // ... 17 autres questions similaires
+        // Ajoute 19 questions supplémentaires pour SNK...
       ]
     },
-
     {
-      "id": 4,
-      "title": "Anime Quiz #4",
-      "mal_id": 1004,
+      "id": "4",
+      "title": "Demon Slayer",
+      "description": "Testez vos connaissances sur Demon Slayer.",
       "questions": [
-        { "type": "true_false", "question": "Cet anime est populaire au Japon.", "correct_answer": "true" }
-        // 19 autres questions similaires
+        {
+          "id": "ds1",
+          "type": "multiple_choice_image",
+          "question": "Quel personnage est-ce ?",
+          "answers": [
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
+          ]
+        }
+       
       ]
     },
-
     {
-      "id": 5,
-      "title": "Anime Quiz #5",
-      "mal_id": 1005,
+      "id": "5",
+      "title": "Fullmetal Alchemist",
+      "description": "Testez vos connaissances sur Fullmetal Alchemist.",
       "questions": [
-        { "type": "multiple_choice", "question": "Quel est le protagoniste principal ?", "answers": [
-          { "text": "Personnage A", "is_correct": true },
-          { "text": "Personnage B", "is_correct": false },
-          { "text": "Personnage C", "is_correct": false }
-        ]}
-        // 19 autres questions similaires
+        {
+          "id": "fma1",
+          "type": "multiple_choice",
+          "question": "Quel est le principe fondamental de l'alchimie ?",
+          "answers": [
+            { "text": "Échange équivalent", "is_correct": true },
+            { "text": "Transformation infinie", "is_correct": false }
+          ]
+        }
+       
       ]
     },
-
     {
-      "id": 6,
-      "title": "Anime Quiz #6",
-      "mal_id": 1006,
+      "id": "6",
+      "title": "Jujutsu Kaisen",
+      "description": "Testez vos connaissances sur Jujutsu Kaisen.",
       "questions": [
-        { "type": "multiple_choice_image", "question": "Qui est sur cette image ?", "answers": [
-          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
-          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
-        ]}
-        // 19 autres questions similaires
+        {
+          "id": "jjk1",
+          "type": "multiple_choice",
+          "question": "Quel est le nom du personnage principal ?",
+          "answers": [
+            { "text": "Yuji Itadori", "is_correct": true },
+            { "text": "Megumi Fushiguro", "is_correct": false }
+          ]
+        }
+       
       ]
     },
-
     {
-      "id": 7,
-      "title": "Anime Quiz #7",
-      "mal_id": 1007,
+      "id": "7",
+      "title": "My Hero Academia",
+      "description": "Testez vos connaissances sur MHA.",
       "questions": [
-        { "type": "true_false", "question": "Cet anime a reçu un prix.", "correct_answer": "true" }
-        // 19 autres questions similaires
+        {
+          "id": "mha1",
+          "type": "true_false",
+          "question": "Izuku Midoriya a hérité du pouvoir One For All.",
+          "correct_answer": "true"
+        }
       ]
     },
-
     {
-      "id": 8,
-      "title": "Anime Quiz #8",
-      "mal_id": 1008,
+      "id": "8",
+      "title": "Death Note",
+      "description": "Testez vos connaissances sur Death Note.",
       "questions": [
-        { "type": "multiple_choice", "question": "Quel est le genre de cet anime ?", "answers": [
-          { "text": "Aventure", "is_correct": true },
-          { "text": "Comédie", "is_correct": false }
-        ]}
-        // 19 autres questions similaires
+        {
+          "id": "dn1",
+          "type": "multiple_choice",
+          "question": "Qui est le premier à trouver le Death Note ?",
+          "answers": [
+            { "text": "Light Yagami", "is_correct": true },
+            { "text": "L", "is_correct": false }
+          ]
+        }
+       
       ]
     },
-
     {
-      "id": 9,
-      "title": "Anime Quiz #9",
-      "mal_id": 1009,
+      "id": "9",
+      "title": "Dragon Ball",
+      "description": "Testez vos connaissances sur Dragon Ball.",
       "questions": [
-        { "type": "multiple_choice_image", "question": "Personnage illustré ?", "answers": [
-          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
-          { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
-        ]}
-        // 19 autres questions similaires
+        {
+          "id": "db1",
+          "type": "multiple_choice_image",
+          "question": "Qui est ce personnage ?",
+          "answers": [
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": true },
+            { "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", "is_correct": false }
+          ]
+        }
       ]
     },
-
     {
-      "id": 10,
-      "title": "Anime Quiz #10",
-      "mal_id": 1010,
+      "id": "10",
+      "title": "Bleach",
+      "description": "Testez vos connaissances sur Bleach.",
       "questions": [
-        { "type": "true_false", "question": "Cet anime est adapté d'un manga.", "correct_answer": "true" }
-        // 19 autres questions similaires
+        {
+          "id": "bl1",
+          "type": "multiple_choice",
+          "question": "Quel est le nom du personnage principal ?",
+          "answers": [
+            { "text": "Ichigo Kurosaki", "is_correct": true },
+            { "text": "Rukia Kuchiki", "is_correct": false }
+          ]
+        }
       ]
     }
   ]
