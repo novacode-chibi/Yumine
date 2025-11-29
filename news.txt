@@ -2,7 +2,7 @@ title::test
 content::test
 image::https://raw.githubusercontent.com/novacode-chibi/Yumine/main/images/icon.jpeg
 ---
-title::a
+title::ab
 content::a
 image::https://raw.githubusercontent.com/novacode-chibi/Yumine/main/images/scaled_1000136735.jpg
 ---
