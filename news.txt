@@ -9,5 +9,3 @@ image::https://raw.githubusercontent.com/novacode-chibi/Yumine/main/images/scale
 title::Nouvelle news
 content::bla bla ba
 image::
----
-
