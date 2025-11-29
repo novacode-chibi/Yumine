@@ -10,3 +10,7 @@ title::Nouvelle news
 content::bla bla ba
 image::
 ---
+title::Nouvelle news 2
+content::
+image::/home/yumine/Images/ChatGPT Image 10 août 2025, 01_35_31.png
+---
