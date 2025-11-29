@@ -6,3 +6,7 @@ title::ab
 content::a
 image::https://raw.githubusercontent.com/novacode-chibi/Yumine/main/images/scaled_1000136735.jpg
 ---
+title::Nouvelle news
+content::bla bla ba
+image::
+---
