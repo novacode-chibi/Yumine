@@ -1,11 +1,12 @@
 title::test
 content::test
-image::https://raw.githubusercontent.com/novacode-chibi/Yumine/main/images/icon.jpeg
+image::images/icon.jpeg
 ---
 title::ab
 content::a
-image::https://raw.githubusercontent.com/novacode-chibi/Yumine/main/images/scaled_1000136735.jpg
+image::images/scaled_1000136735.jpg
 ---
 title::Nouvelle news
 content::bla bla ba
-image::
+image::images/image_1764418287264.jpg
+---
