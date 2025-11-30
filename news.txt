@@ -2,7 +2,3 @@ title::Test 1
 content::test
 image::images/image_1764509001939.jpg
 ---
-title::Nouvelle news
-content::
-image::images/image_1764509029322.jpg
----
