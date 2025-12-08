@@ -1,9 +1,9 @@
-{
-  "news": [
-    {
-      "title": "News de test",
-      "content": "L’informatique est un domaine vaste et en constante évolution, qui influence presque tous les aspects de notre vie moderne. Elle repose sur l’étude du traitement automatique de l’information à l’aide de machines programmables, les ordinateurs. Au cœur de ce domaine se trouvent les algorithmes, des suites d’instructions permettant de résoudre des problèmes de manière efficace et reproductible. Grâce à eux, il est possible d’automatiser des tâches complexes, d’analyser de grandes quantités de données et de créer des systèmes intelligents.\n\nLe développement logiciel constitue une branche essentielle de l’informatique. Les développeurs conçoivent des applications, des sites web et des systèmes embarqués en utilisant des langages comme Python, C, Java ou Dart. Ces programmes facilitent la communication, le travail collaboratif et le divertissement. Le matériel informatique, quant à lui, regroupe les composants physiques tels que les processeurs, la mémoire, les disques et les cartes graphiques, qui permettent d’exécuter ces logiciels.\n\nL’informatique englobe aussi la cybersécurité, indispensable pour protéger les données et les infrastructures contre les menaces numériques. Enfin, l’intelligence artificielle transforme profondément la manière dont les machines apprennent, analysent et interagissent avec les humains, ouvrant la voie à de nouvelles innovations.",
-      "image": "images/image_1765211879277.jpg"
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "title": "News de test",
+    "content": "L’informatique est un domaine vaste et en constante évolution...",
+    "date": "2025-01-10T12:00:00.000Z",
+    "image": "images/image_1765211879277.jpg"
+  }
+]
