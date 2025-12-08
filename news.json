@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "title": "News de test",
-    "content": "L’informatique est un domaine vaste et en constante évolution...",
-    "date": "2025-01-10T12:00:00.000Z",
-    "image": "images/image_1765211879277.jpg"
+    "title": "Titre de l'actualité",
+    "content": "Contenu de l'actualité...",
+    "date": "2024-01-15T10:30:00",
+    "imagePath": "images/image_1764583722386.jpg"
   }
 ]
