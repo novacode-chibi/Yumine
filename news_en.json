@@ -1,9 +1,1 @@
-[
-  {
-    "id": "1",
-    "title": "Titre de l'actualité 2",
-    "content": "Contenu de l'actualité...",
-    "date": "2024-01-15T10:30:00",
-    "imagePath": "images/image_1764583722386.jpg"
-  }
-]
+[{"id":"1","title":"Titre de l'actualité 2","content":"Contenu de l'actualité...","date":"2024-01-15T10:30:00","imagePath":"https://raw.githubusercontent.com/novacode-chibi/Yumine/main/images/image_1764583722386.jpg"}]
