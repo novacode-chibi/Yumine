@@ -1,0 +1,39 @@
+{
+  "chapters": [
+    {
+      "manga_name": "One Piece",
+      "chapter_number": "1234",
+      "cover_url": "https://cdn.myanimelist.net/images/manga/2/253146.jpg",
+      "read_url": "https://example.com/read/one-piece/1234",
+      "date": "14 Jan 2026"
+    },
+    {
+      "manga_name": "Jujutsu Kaisen",
+      "chapter_number": "245",
+      "cover_url": "https://cdn.myanimelist.net/images/manga/3/210341.jpg",
+      "read_url": "https://example.com/read/jujutsu-kaisen/245",
+      "date": "13 Jan 2026"
+    },
+    {
+      "manga_name": "My Hero Academia",
+      "chapter_number": "412",
+      "cover_url": "https://cdn.myanimelist.net/images/manga/1/209807.jpg",
+      "read_url": "https://example.com/read/my-hero-academia/412",
+      "date": "12 Jan 2026"
+    },
+    {
+      "manga_name": "Chainsaw Man",
+      "chapter_number": "158",
+      "cover_url": "https://cdn.myanimelist.net/images/manga/3/216464.jpg",
+      "read_url": "https://example.com/read/chainsaw-man/158",
+      "date": "11 Jan 2026"
+    },
+    {
+      "manga_name": "Tokyo Ghoul:re",
+      "chapter_number": "89",
+      "cover_url": "https://cdn.myanimelist.net/images/manga/3/149573.jpg",
+      "read_url": "https://example.com/read/tokyo-ghoul-re/89",
+      "date": "10 Jan 2026"
+    }
+  ]
+}
