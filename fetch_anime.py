@@ -31,7 +31,7 @@ def compress_cover(url):
 def fetch_season_anime(season_type):
     all_anime, page = [], 1
     while True:
-        url = f"https://api.jikan.moe/v4/seasons/{season_type}?page={page}"
+        url = f"https://api.jikan.moe/v4/seasons/{season_type}?sfw=true&page={page}"
         resp = requests.get(url)
         if resp.status_code != 200:
             print(f"Erreur {resp.status_code} pour {season_type} page {page}")
